@@ -1,11 +1,8 @@
 // Задача 1. Дано оцінки учня за 5 предметів у 12 бальній шкалі.  Вивести номери предметів, з яких у учня трійки?
 {
     let ratingArr = [1, 2, 3, 4, 5]
-    ratingArr.filter((x, i) => {
-        if (x === 3) {
-            alert(i);
-        }
-    })
+    ratingArr.filter((x, i) =>   return x === 3)
+    Потім вивести ratingArr 
 }
 // Задача 2. Користувач вводить 10 слів. Підрахувати кількість слів, у яких перша літера і остання літера однакові.
 {
@@ -36,7 +33,7 @@
 {
     let numArr = [2, 54, 66, 32, 78, 12, 99, 2, 18, 4]
     let mark = false
-    let sumSomeElements = numArr.reduce(function (sum, x) {
+    let sumSomeElements = numArr.reduce(function (sum, x) {  Спробуйте спростити (перед reduce використайте indexOf
         if (mark) {
             sum += x
         }
